@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Guess The Country</title>
+    <script type="text/javascript" src="./countries.js"></script>
 </head>
 <body>
-    
+    <header>
+        <h1 class="title">Guess the country</h1>
+    </header>
+    <main>
+        <section class="inputs">
+            <div class="letter">
+                <p class="p leter__p">Enter your letter here:</p>
+                <input type="text" class="input" placeholder="❤️" id="leterInput">
+                <button type="submit" class="button" onclick="checkLetter()">Comprobar</button>
+                <p id="letterAnswer" class="p2">🌎</p>
+            </div>
+            <div class="country">
+                <p class="p country__p">Enter your country here:</p>
+                <input type="text" class="input" placeholder="❤️" id="countryInput">
+                <button type="submit" class="button" onclick="checkCountry()">Comprobar</button>
+                <p id="countryAnswer" class="p2">🌎</p>
+            </div>
+        </section>
+        <section class="clues" id="clues-colors">
+            <p class="p">Main colors of the country flag:</p>
+        </section>
+        <section class="progress">
+            <div class="progress__country" id="progress__box"></div>
+            <div class="progress__opportunities" id="opportunities">
+                <p>Remaining lives:</p>
+                <div class="heart" id="one"></div>
+                <div class="heart" id="two"></div>
+                <div class="heart" id="three"></div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+<script type="text/javascript" src="./main.js"></script>
 </html>
